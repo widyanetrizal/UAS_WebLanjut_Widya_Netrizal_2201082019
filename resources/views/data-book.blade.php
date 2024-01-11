@@ -30,7 +30,8 @@
                     <td>{{ $book->pengarang }}</td>
                     <td>{{ $book->penerbit }}</td>
                     <td>{{ $book->halaman }}</td>
-                    <td>{{ $book->foto_sampul }}</td>
+                    <td><img src="/images/{{ $book->foto_sampul }}" class="img-fluid" alt="..."
+                            style="object-fit: cover; width: 255px; height: 135px;"></td>
                     <td class="text-nowrap">
                         <a href="/books/{{ $book->id }}/edit" class="btn btn-warning">Edit</a>
                         <a href="/book/delete/{{ $book->id }}" class="btn btn-danger"

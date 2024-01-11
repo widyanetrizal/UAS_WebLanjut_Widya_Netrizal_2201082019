@@ -44,6 +44,7 @@
         <div class="mb-3">
             <label for="foto_sampul" class="form-label">Foto Sampul:</label>
             <input type="file" class="form-control" id="foto_sampul" name="foto_sampul" required="">
+
         </div>
         <div class="mb-3">
             <button type="submit" class="btn btn-primary">Simpan</button>

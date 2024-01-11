@@ -101,7 +101,7 @@ class BookController extends Controller // Ganti MovieController dengan BookCont
             'foto_sampul' => $fileName,
         ]);
 
-        return redirect('/')->with('success', 'Data berhasil disimpan');
+        return redirect('/books/data')->with('success', 'Data berhasil disimpan');
     }
 
     public function data()
@@ -179,7 +179,7 @@ class BookController extends Controller // Ganti MovieController dengan BookCont
             ]);
         }
 
-        return redirect('/book/data')->with('success', 'Data berhasil diperbarui');
+        return redirect('/books/data')->with('success', 'Data berhasil diperbarui');
     }
 
     public function delete($id)
